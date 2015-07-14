@@ -14,11 +14,11 @@ Simulation
   Coordinate Mapping(3) = 1 2 3
   Timestepping Method = "Newmark"
   Newmark Beta = 1
-  Timestep Intervals(1) = 100
+  Timestep Intervals(1) = 200
   Timestep Sizes(1) = 2
   Output Intervals(1) = 1
-  Simulation Type = "Transient" 
-  Steady State Max Iterations = 10
+  Simulation Type = "Transient"
+  Steady State Max Iterations = 100
   Solver Input File = "RayleighBenard.sif"
   Output File = "RayleighBenard.result" 
   Post File = "RayleighBenard.vtu" 
@@ -105,19 +105,26 @@ Boundary Condition 2
   Target Boundaries = 2
   Velocity 1 = 0
   Velocity 2 = 0
+  Temperature = 283
 End
 
 Boundary Condition 3
   Target Boundaries = 3
   Velocity 1 = 0
   Velocity 2 = 0
-  Temperature = 284
+  Temperature = 283
 End
 
 Boundary Condition 4
   Target Boundaries = 4
   Velocity 1 = 0
   Velocity 2 = 0
+  Temperature = 283
 End
 
-
+Boundary Condition 5
+  Target Boundaries = 5
+  Velocity 1 = 0
+  Velocity 2 = 0
+  Temperature = 285
+End
